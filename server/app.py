@@ -60,6 +60,13 @@ def state():
         "scores": scores
     }
 
+@app.get("/")
+def home():
+    return {
+        "message": "Customer Support OpenEnv Running",
+        "endpoints": ["/reset", "/step", "/state"]
+    }
+
 def main():
     uvicorn.run(
         "server.app:app",
