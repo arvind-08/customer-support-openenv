@@ -1,0 +1,26 @@
+[project]
+name = "customer-support-openenv"
+version = "0.1.0"
+description = "AI Customer Support OpenEnv environment"
+authors = [
+    { name = "Arvind Kumar" }
+]
+requires-python = ">=3.9"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "requests",
+    "openenv-core"
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[tool.openenv]
+entrypoint = "server.app:app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
