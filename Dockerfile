@@ -2,16 +2,14 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
-RUN pip install --no-cache-dir --upgrade pip
-
-RUN pip install --no-cache-dir \
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir \
     fastapi \
     uvicorn \
     pydantic \
     openenv-core \
-    numpy \
     requests
 
 EXPOSE 7860
