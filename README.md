@@ -156,26 +156,6 @@ Run: openenv validate
 
 ---
 
-## Project Structure
-
-customer-support-openenv/
-    │
-    ├── openenv.yaml
-    ├── Dockerfile
-    ├── inference.py
-    ├── README.md
-    │
-    ├── environment/
-    │    ├── models.py
-    │    ├── env.py
-    │    ├── tasks.py
-    │    └── grader.py
-    │
-    └── server/
-        └── app.py
-
----
-
 ## Deployment
 
 Deploy to Hugging Face Spaces:
