@@ -173,6 +173,3 @@ This environment allows training and evaluating agents in realistic workflows.
 
 ---
 
-## License
-
-MIT License
